@@ -1,6 +1,6 @@
 <?php
 
-/** 获取百度AICP数据
+/** 获取xx数据
  * Class apiTest
  */
 class apiTest
@@ -18,14 +18,14 @@ class apiTest
         $this->Requestapi($this->query_text);
     }
 
-    /**调起百度AICP智能TalkSystem
+    /**调起xx智能TalkSystem
      * @param $query_text
      * @return null
      */
     public function Requestapi($query_text)
     {
 
-        $url = "http://api.aicp.baidu.com/api/v1/core/query?version=20170407";
+        $url = "http://api.aicp.xxxx.com/api/v1/core/query?version=20170407";
         $arr['query_text'] = '';
         $arr['test_console'] = true;
         $arr['test_mode'] = true;
@@ -57,7 +57,7 @@ class apiTest
 
 
     /**
-     * curl post请求api header中包含AICP平台auth验证token
+     * curl post请求api header中包含xx平台auth验证token
      * @param $url
      * @param $data
      * @return mixed
@@ -68,7 +68,7 @@ class apiTest
     {
         $header = array(
             'Content-Type: application/json',
-            'Authorization: AICP 2a2b4ab9-fb5a-41f9-b100-383288088e01');
+            'Authorization:  2a2b4ab9-fb5a-41f9-b100-383288088e01');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
