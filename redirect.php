@@ -19,8 +19,8 @@ $self->sWitchRest('comments/reply'); // 回复用户消息
 class Redirect
 {
     private $app_id = 3127114891;
-    private $app_secret = "efa368a125d44274a358714105f4a117";
-    private $redirect = "https://chat.jkbk.cn/jingxin/weibo/redirect.php";
+    private $app_secret = "xxxxxxxxxxxxxxxxxxxxxx";
+    private $redirect = "https://xxxx.xxxx.cn/jingxin/weibo/redirect.php";
     private $access_token = null;
     private $uid = null;
     private $comments = [];
